@@ -44,7 +44,7 @@ const Greeting = props => {
   return (
     <>
       <p>{greeting} {count}</p>
-      <Button variant="contained" onClick={() => setCount(count)}>Click</Button>
+      <Button variant="contained" onClick={() => setCount(count + 1)}>Click</Button>
     </>
   );
 }

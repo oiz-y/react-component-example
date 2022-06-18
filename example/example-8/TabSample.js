@@ -69,6 +69,7 @@ const BasicTabs = () => {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
+        {/* 共通化コンポーネントをここに直接書く */}
         <Greeting greeting="Good Morning!" count={morningCount} setCount={setMorningCount}/>
       </TabPanel>
       <TabPanel value={value} index={1}>

@@ -11,6 +11,7 @@ const App = () => {
     <div className="App">
       <Grid container>
         <Grid item xs={6}>
+          {/* 関数コンポーネント Morning、Hello、Evening を BasicTabs コンポーネントに渡す */}
           <BasicTabs Morning={Morning} Hello={Hello} Evening={Evening} />
         </Grid>
       </Grid>

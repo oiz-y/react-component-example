@@ -40,9 +40,7 @@ function a11yProps(index) {
 }
 
 const Morning = props => <Greeting greeting="Good Morning!" {...props} />;
-
 const Hello = props => <Greeting greeting="Hello!" {...props} />;
-
 const Evening = props => <Greeting greeting="Good Evening!" {...props} />;
 
 const Greeting = props => {

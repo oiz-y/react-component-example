@@ -4,15 +4,16 @@ import BasicTabs from './TabSample';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
-const Morning = <Greeting greeting={"Good Morning!"}/>;
-const Hello = <Greeting greeting={"Hello!"}/>;
-const Evening = <Greeting greeting={"Good Evening!"}/>;
+const Morning = () => <Greeting greeting={"Good Morning!"}/>;
+const Hello = () => <Greeting greeting={"Hello!"}/>;
+const Evening = () => <Greeting greeting={"Good Evening!"}/>;
 
 const Greeting = props => {
   const { greeting } = props;
   const [count, setCount] = useState(0);
   return (
     <>
+      {/* 挨拶要素とボタン要素を共通化 */}
       <p>{greeting} {count}</p>
       <Button variant="contained" onClick={() => setCount(count + 1)}>Click</Button>
     </>

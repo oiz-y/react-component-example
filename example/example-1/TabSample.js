@@ -39,6 +39,7 @@ function a11yProps(index) {
 }
 
 const BasicTabs = props => {
+  // 親コンポーネントである App コンポーネントから props を受け取る
   const { morning, hello, evening } = props;
   const [value, setValue] = useState(0);
 
